@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>TechFest</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    
+    <link href="css/techstyle.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    
+<div class="container-fluid">
+
+    <input type="text" id="myInput" class="form-control" style="margin:30px 4px;width: 100%;" placeholder="Search...techfest name or college">
+
+
+    <div class="accordion" id="accordionExample">
+
+        <!-- Tf1 -->
+        <div class="card">
+            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                TechFest Name 1 College 1s
+            </h5>
+            <hr class="line">
+            <label style="float:right;" >5 Feb 2020</label>
+
+          </div>
+        </button>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <img src="iitbtech2018.jpg" style="max-width:100%;" alt="">
+              Anim pariatur cliche reprehenderit tttsss, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+
+<!-- tf2 -->
+
+<div class="card">
+    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+              TechFest Name 2 College 1s iit
+          </h5>
+          <hr class="line">
+          <label style="float:right;" >5 Feb 2020</label>
+
+        </div>
+      </button>
+        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+              <img src="iitbtech2018.jpg" style="max-width:100%;" alt="">
+            Anim pariatur cliche reprehenderit, bombay enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+
+</div>
+
+       
+
+
+
+
+
+</div>
+
+
+
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+
+    var value = $(this).val().toLowerCase();
+
+    $(".card").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script> 
+
+
+</body>
